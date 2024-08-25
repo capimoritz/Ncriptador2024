@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mission-message" class="modal">
+        <div class="modal-content">
+            <p>Tu misión, si decides aceptarla, es recordar que este encriptador no acepta mayúsculas ni caracteres especiales. Este mensaje se autodestruirá en cinco segundos.</p>
+            <button id="accept-mission">Aceptar</button>
+            <button id="reject-mission">No aceptar</button>
+        </div>
+    </div>
+
+    <div id="game-over" class="modal">
+        <div class="modal-content">
+            <p>OTRA VEZ SERA-GAME OVER</p>
+        </div>
+    </div>
+
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+
+    <main>
+        <textarea id="input-text" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="buttons">
+            <button id="encrypt">Encriptar</button>
+            <button id="decrypt">Desencriptar</button>
+        </div>
+        <textarea id="output-text" readonly></textarea>
+        <button id="copy">Copiar</button>
+    </main>
+
+    <div class="marquee">
+        <p>
+            <a href="https://www.linkedin.com/in/marquezmauro/" target="_blank">
+                Desarrollado por Mauro Agustin Marquez para Oracle y Alura 2024 - Si queres visitar mi perfil hace click "Aqui" - Todos los derechos reservados.
+            </a>
+        </p>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="Mission_Impossible_Full.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
